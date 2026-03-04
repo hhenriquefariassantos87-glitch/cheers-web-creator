@@ -1,0 +1,69 @@
+import { Instagram, Facebook } from "lucide-react";
+
+const FooterSection = () => {
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <footer className="py-16 bg-dark-surface border-t border-border">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <span className="font-display text-xl font-bold text-gradient-gold">ABS Bartenders</span>
+            <p className="text-muted-foreground font-body text-sm mt-4">
+              Transformando eventos em experiências inesquecíveis há mais de 10 anos.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-display font-bold text-foreground mb-4">Navegação</h4>
+            <ul className="space-y-2">
+              {[
+                { label: "Início", id: "hero" },
+                { label: "Serviços", id: "servicos" },
+                { label: "Pacotes", id: "pacotes" },
+                { label: "Sobre", id: "sobre" },
+              ].map((item) => (
+                <li key={item.id}>
+                  <button onClick={() => scrollTo(item.id)} className="text-muted-foreground hover:text-primary font-body text-sm transition-colors">
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-display font-bold text-foreground mb-4">Serviços</h4>
+            <ul className="space-y-2 text-muted-foreground font-body text-sm">
+              <li>Bartenders Profissionais</li>
+              <li>Estrutura Completa</li>
+              <li>Drinks Exclusivos</li>
+              <li>Bar Móvel</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-display font-bold text-foreground mb-4">Contato</h4>
+            <ul className="space-y-2 text-muted-foreground font-body text-sm">
+              <li>(11) 98284-4587</li>
+              <li>contato@absbartenders.com.br</li>
+              <li>São Paulo, SP</li>
+            </ul>
+            <div className="flex gap-4 mt-4">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={20} /></a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook size={20} /></a>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center text-muted-foreground font-body text-sm border-t border-border pt-8">
+          © ABS Bartenders 2025. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default FooterSection;
