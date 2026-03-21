@@ -14,7 +14,7 @@ const AboutSection = () => {
           </div>
           <div>
             <p className="text-foreground/80 font-body text-lg leading-relaxed mb-8">
-              Há mais de 10 anos no mercado, a ABS Bartenders é especializada em casamentos, aniversários e eventos corporativos. 
+              Há mais de 10 anos no mercado, a Kaer Bartenders é especializada em casamentos, aniversários e eventos corporativos. 
               Nossa equipe qualificada transforma cada evento em uma experiência única e inesquecível.
             </p>
             <div className="grid grid-cols-2 gap-6">

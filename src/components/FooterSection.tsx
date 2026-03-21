@@ -59,7 +59,7 @@ const FooterSection = () => {
         </div>
 
         <div className="text-center text-muted-foreground font-body text-sm border-t border-border pt-8">
-          © ABS Bartenders 2025. Todos os direitos reservados.
+          © Kaer Bartenders 2025. Todos os direitos reservados.
         </div>
       </div>
     </footer>
