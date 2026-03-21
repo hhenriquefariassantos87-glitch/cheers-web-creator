@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const navLinks = ["Início", "Serviços", "Pacotes", "Balcões", "Sobre", "Contato"];
 
@@ -24,7 +25,10 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <span className="font-display text-xl font-bold text-gradient-gold">ABS Bartenders</span>
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="KAER Bartenders logo" className="w-10 h-10 rounded-full object-cover border-2 border-primary" />
+          <span className="font-display text-xl font-bold text-gradient-gold">ABS Bartenders</span>
+        </div>
         
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
