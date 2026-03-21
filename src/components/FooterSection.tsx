@@ -51,9 +51,19 @@ const FooterSection = () => {
               <li>contato@absbartenders.com.br</li>
               <li>São Paulo, SP</li>
             </ul>
-            <div className="flex gap-4 mt-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook size={20} /></a>
+            <div className="flex gap-6 mt-4">
+              <a href="#" className="flex flex-col items-center gap-1 group">
+                <span className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
+                  <Instagram size={20} className="text-primary" />
+                </span>
+                <span className="text-muted-foreground group-hover:text-primary text-xs transition-colors">Instagram</span>
+              </a>
+              <a href="#" className="flex flex-col items-center gap-1 group">
+                <span className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
+                  <Facebook size={20} className="text-primary" />
+                </span>
+                <span className="text-muted-foreground group-hover:text-primary text-xs transition-colors">Facebook</span>
+              </a>
             </div>
           </div>
         </div>
