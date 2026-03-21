@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBanner} alt="Kaer Bartenders" className="w-full h-full object-cover" />
+        <img src={heroBanner} alt="Kaer Bartenders" className="w-full h-full object-contain" />
         <div className="absolute inset-0 bg-background/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
       </div>
