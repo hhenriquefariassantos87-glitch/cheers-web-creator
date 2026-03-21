@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-background.jpg";
+import heroBanner from "@/assets/hero-banner.jpg";
 
 const stats = [
   { value: "10+", label: "Anos de Experiência" },
@@ -13,6 +14,14 @@ const HeroSection = () => {
         <img src={heroImg} alt="Bartender profissional" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-background/75" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+      </div>
+
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]">
+        <img
+          src={heroBanner}
+          alt="Kaer Bartenders Logo"
+          className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain rounded-full"
+        />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center pt-20">
