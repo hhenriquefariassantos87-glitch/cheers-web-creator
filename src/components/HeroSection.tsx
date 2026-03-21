@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-background.jpg";
+import heroBanner from "@/assets/hero-banner.jpg";
 
 const stats = [
   { value: "10+", label: "Anos de Experiência" },
