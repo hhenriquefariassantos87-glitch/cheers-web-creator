@@ -10,7 +10,7 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div className="rounded-xl overflow-hidden">
-            <img src={teamImg} alt="Equipe ABS Bartenders" className="w-full h-full object-cover" />
+            <img src={teamImg} alt="Equipe Kaer Bartenders" className="w-full h-full object-cover" />
           </div>
           <div>
             <p className="text-foreground/80 font-body text-lg leading-relaxed mb-8">
