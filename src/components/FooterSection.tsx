@@ -10,7 +10,7 @@ const FooterSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <span className="font-display text-xl font-bold text-gradient-gold">ABS Bartenders</span>
+            <span className="font-display text-xl font-bold text-gradient-gold">Kaer Bartenders</span>
             <p className="text-muted-foreground font-body text-sm mt-4">
               Transformando eventos em experiências inesquecíveis há mais de 10 anos.
             </p>
@@ -59,7 +59,7 @@ const FooterSection = () => {
         </div>
 
         <div className="text-center text-muted-foreground font-body text-sm border-t border-border pt-8">
-          © ABS Bartenders 2025. Todos os direitos reservados.
+          © Kaer Bartenders 2025. Todos os direitos reservados.
         </div>
       </div>
     </footer>
