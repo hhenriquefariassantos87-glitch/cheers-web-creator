@@ -1,4 +1,4 @@
-import teamImg from "@/assets/team-photo.jpg";
+import teamImg from "@/assets/about-team.jpg";
 
 const AboutSection = () => {
   return (
