@@ -7,8 +7,11 @@ import event5 from "@/assets/event-5.jpg";
 import event6 from "@/assets/event-6.jpg";
 import event7 from "@/assets/event-7.jpg";
 import event8 from "@/assets/event-8.jpg";
+import event9 from "@/assets/event-9.jpg";
+import event10 from "@/assets/event-10.jpg";
+import event11 from "@/assets/event-11.jpg";
 
-const images = [event1, event2, event3, event4, event5, event6, event7, event8];
+const images = [event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11];
 
 const GallerySection = () => {
   const [selected, setSelected] = useState<string | null>(null);
