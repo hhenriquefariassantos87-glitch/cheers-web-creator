@@ -21,6 +21,7 @@ const Index = () => {
       <EventsSection />
       <DifferentialsSection />
       <GallerySection />
+      <VideoSection />
       <AboutSection />
       <PackagesSection />
       <CountersSection />
