@@ -26,17 +26,14 @@ const EventsSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {events.map((event) => (
-            <div
-              key={event.name}
-              className="relative rounded-xl overflow-hidden group cursor-pointer aspect-[3/4]"
-              onClick={() => setSelected(event.image)}
-            >
-              <img src={event.image} alt={event.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-background/50 group-hover:bg-background/30 transition-colors" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-4xl mb-2">{event.icon}</span>
-                <span className="font-display text-lg font-bold text-foreground">{event.name}</span>
+            <div key={event.name} className="flex flex-col items-center gap-3">
+              <div
+                className="relative rounded-xl overflow-hidden group cursor-pointer aspect-[3/4] w-full"
+                onClick={() => setSelected(event.image)}
+              >
+                <img src={event.image} alt={event.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
+              <span className="font-display text-lg font-bold text-foreground">{event.name}</span>
             </div>
           ))}
         </div>
