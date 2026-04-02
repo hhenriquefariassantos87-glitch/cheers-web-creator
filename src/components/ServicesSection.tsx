@@ -23,6 +23,8 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const [selected, setSelected] = useState<string | null>(null);
+
   return (
     <section id="servicos" className="py-20 bg-dark-surface">
       <div className="container mx-auto px-4">
@@ -36,7 +38,7 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.title} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all group">
-              <div className="h-56 overflow-hidden">
+              <div className="h-56 overflow-hidden cursor-pointer" onClick={() => setSelected(service.image)}>
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-6">
@@ -54,6 +56,12 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
+
+      {selected && (
+        <div className="fixed inset-0 z-50 bg-background/90 flex items-center justify-center p-4 cursor-pointer" onClick={() => setSelected(null)}>
+          <img src={selected} alt="Serviço" className="max-w-full max-h-[90vh] rounded-xl object-contain" />
+        </div>
+      )}
     </section>
   );
 };

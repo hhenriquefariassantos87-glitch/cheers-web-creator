@@ -11,7 +11,7 @@ const AboutSection = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div className="rounded-xl overflow-hidden">
+          <div className="rounded-xl overflow-hidden cursor-pointer" onClick={() => setSelected(teamImg)}>
             <img src={teamImg} alt="Equipe Kaer Bartenders" className="w-full h-full object-cover" />
           </div>
           <div>
