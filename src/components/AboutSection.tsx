@@ -4,6 +4,7 @@ import teamImg from "@/assets/about-team.jpg";
 const AboutSection = () => {
   const [selected, setSelected] = useState<string | null>(null);
   return (
+    <>
     <section id="sobre" className="py-20 bg-dark-surface">
       <div className="container mx-auto px-4">
         <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-16">
