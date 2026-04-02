@@ -33,7 +33,15 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+
+    {selected && (
+      <div className="fixed inset-0 z-50 bg-background/90 flex items-center justify-center p-4 cursor-pointer" onClick={() => setSelected(null)}>
+        <img src={selected} alt="Sobre nós" className="max-w-full max-h-[90vh] rounded-xl object-contain" />
+      </div>
+    )}
+  </>
   );
+};
 };
 
 export default AboutSection;
