@@ -4,6 +4,7 @@ import ServicesSection from "@/components/ServicesSection";
 import EventsSection from "@/components/EventsSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import GallerySection from "@/components/GallerySection";
+import VideoSection from "@/components/VideoSection";
 import AboutSection from "@/components/AboutSection";
 import PackagesSection from "@/components/PackagesSection";
 import CountersSection from "@/components/CountersSection";
