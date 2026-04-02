@@ -1,7 +1,10 @@
+import { useState } from "react";
 import teamImg from "@/assets/about-team.jpg";
 
 const AboutSection = () => {
+  const [selected, setSelected] = useState<string | null>(null);
   return (
+    <>
     <section id="sobre" className="py-20 bg-dark-surface">
       <div className="container mx-auto px-4">
         <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-16">
@@ -9,7 +12,7 @@ const AboutSection = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div className="rounded-xl overflow-hidden">
+          <div className="rounded-xl overflow-hidden cursor-pointer" onClick={() => setSelected(teamImg)}>
             <img src={teamImg} alt="Equipe Kaer Bartenders" className="w-full h-full object-cover" />
           </div>
           <div>
@@ -31,6 +34,13 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+
+    {selected && (
+      <div className="fixed inset-0 z-50 bg-background/90 flex items-center justify-center p-4 cursor-pointer" onClick={() => setSelected(null)}>
+        <img src={selected} alt="Sobre nós" className="max-w-full max-h-[90vh] rounded-xl object-contain" />
+      </div>
+    )}
+  </>
   );
 };
 
