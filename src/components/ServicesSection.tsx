@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Check } from "lucide-react";
 import bartendersImg from "@/assets/bartenders-profissionais.jpg";
 import estruturaImg from "@/assets/estrutura-completa.jpg";

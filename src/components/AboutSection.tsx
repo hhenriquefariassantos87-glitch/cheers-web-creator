@@ -1,6 +1,8 @@
+import { useState } from "react";
 import teamImg from "@/assets/about-team.jpg";
 
 const AboutSection = () => {
+  const [selected, setSelected] = useState<string | null>(null);
   return (
     <section id="sobre" className="py-20 bg-dark-surface">
       <div className="container mx-auto px-4">
