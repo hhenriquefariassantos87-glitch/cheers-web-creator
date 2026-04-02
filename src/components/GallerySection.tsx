@@ -11,8 +11,12 @@ import event9 from "@/assets/event-9.jpg";
 import event10 from "@/assets/event-10.jpg";
 import event11 from "@/assets/event-11.jpg";
 import event12 from "@/assets/event-12.jpg";
+import event13 from "@/assets/event-13.jpg";
+import event14 from "@/assets/event-14.jpg";
+import event15 from "@/assets/event-15.jpg";
+import event16 from "@/assets/event-16.jpg";
 
-const images = [event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11, event12];
+const images = [event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11, event12, event13, event14, event15, event16];
 
 const GallerySection = () => {
   const [selected, setSelected] = useState<string | null>(null);
