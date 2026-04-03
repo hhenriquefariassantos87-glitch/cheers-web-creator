@@ -47,7 +47,7 @@ const FooterSection = () => {
           <div>
             <h4 className="font-display font-bold text-foreground mb-4">Contato</h4>
             <ul className="space-y-2 text-muted-foreground font-body text-sm">
-              <li>(11) 98284-4587</li>
+              <li>(11) 98812-7144</li>
               <li>contato@absbartenders.com.br</li>
               <li>São Paulo, SP</li>
             </ul>
