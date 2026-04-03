@@ -12,7 +12,7 @@ const FooterSection = () => {
           <div>
             <span className="font-display text-xl font-bold text-gradient-gold">Kaer Bartenders</span>
             <p className="text-muted-foreground font-body text-sm mt-4">
-              Transformando eventos em experiências inesquecíveis há mais de 20 anos.
+              Transformando eventos em experiências inesquecíveis há 20 anos.
             </p>
           </div>
 
