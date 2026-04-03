@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="KAER Bartenders logo" className="w-10 h-10 rounded-full object-cover border-2 border-primary" />
+          <img src={logo} alt="KAER Bartenders logo" className="w-14 h-14 rounded-full object-cover border-2 border-primary" />
           <span className="font-display text-xl font-bold text-gradient-gold">Kaer Bartenders</span>
         </div>
         
