@@ -2,7 +2,7 @@ import heroImg from "@/assets/hero-background.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const stats = [
-  { value: "20+", label: "Anos de Experiência" },
+  { value: "20", label: "Anos de Experiência" },
   { value: "500+", label: "Eventos Realizados" },
   { value: "100%", label: "Satisfação" },
 ];
