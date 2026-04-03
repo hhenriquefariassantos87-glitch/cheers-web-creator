@@ -22,7 +22,7 @@ const AboutSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-card rounded-xl p-6 border border-border text-center">
-                <div className="text-3xl font-display font-bold text-primary">20+</div>
+                <div className="text-3xl font-display font-bold text-primary">20</div>
                 <div className="text-muted-foreground text-sm font-body mt-1">Anos de Experiência</div>
               </div>
               <div className="bg-card rounded-xl p-6 border border-border text-center">
