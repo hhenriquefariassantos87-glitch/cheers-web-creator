@@ -21,7 +21,7 @@ const HeroSection = () => {
           Bartenders <span className="text-gradient-gold">Premium</span> para seus Eventos
         </h1>
         <p className="font-body text-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ animationDelay: "0.2s" }}>
-          Mais de 10 anos criando experiências inesquecíveis com drinks exclusivos e atendimento de excelência.
+          Mais de 20 anos criando experiências inesquecíveis com drinks exclusivos e atendimento de excelência.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16" style={{ animationDelay: "0.4s" }}>
