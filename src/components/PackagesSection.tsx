@@ -26,9 +26,10 @@ const packages = [
 ];
 
 const teamCalc = [
-  { guests: "Até 40 pessoas", team: "1 Barman + 1 Barmec" },
-  { guests: "50-80 pessoas", team: "2 Barmen + 1 Barmec" },
-  { guests: "100+ pessoas", team: "2 Barmen + 2 Barmecs" },
+  { guests: "Até 30 pessoas", team: "1 Bartender" },
+  { guests: "60 pessoas", team: "2 Bartenders" },
+  { guests: "90 pessoas", team: "3 Bartenders" },
+  { guests: "120+ pessoas", team: "4+ Bartenders" },
 ];
 
 const PackagesSection = () => {
