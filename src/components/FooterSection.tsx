@@ -52,7 +52,7 @@ const FooterSection = () => {
               <li>São Paulo, SP</li>
             </ul>
             <div className="flex gap-6 mt-4">
-              <a href="#" className="flex flex-col items-center gap-1 group">
+              <a href="https://www.instagram.com/kaer.bartenders?igsh=MThyZ2txMWEyeXV1ag==" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 group">
                 <span className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
                   <Instagram size={20} className="text-primary" />
                 </span>
