@@ -39,7 +39,7 @@ const ServicesSection = () => {
           {services.map((service) => (
             <div key={service.title} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all group">
               <div className="h-56 overflow-hidden cursor-pointer" onClick={() => setSelected(service.image)}>
-                <img src={service.image} alt={service.title} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${service.title === "Drinks Exclusivos" ? "<img src={service.image} alt={service.title} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${service.title === "Drinks Exclusivos" ? "object-[center_75%]" : ""}`} />" : ""}`} />
+                <img src={service.image} alt={service.title} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${service.title === "Drinks Exclusivos" ? "object-[center_75%]" : ""}`} />
               </div>
               <div className="p-6">
                 <h3 className="font-display text-xl font-bold mb-4 text-foreground">{service.title}</h3>
