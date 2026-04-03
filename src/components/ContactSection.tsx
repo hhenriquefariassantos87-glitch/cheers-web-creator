@@ -55,8 +55,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground font-body">Horário</div>
-                  <div className="text-foreground font-body">Dias úteis: 9h - 18h</div>
-                  <div className="text-foreground font-body">Sábado: 9h - 14h</div>
+                  <div className="text-foreground font-body">Segunda a Domingo: 9h - 22h</div>
                 </div>
               </div>
             </div>
