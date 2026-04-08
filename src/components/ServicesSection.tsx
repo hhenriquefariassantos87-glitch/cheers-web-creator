@@ -38,7 +38,7 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.title} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all group">
-              <div className="h-56 overflow-hidden cursor-pointer" onClick={() => setSelected(service.image)}>
+              <div className="h-72 overflow-hidden cursor-pointer" onClick={() => setSelected(service.image)}>
                 <img src={service.image} alt={service.title} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${service.title === "Drinks Exclusivos" ? "object-[center_75%]" : ""}`} />
               </div>
               <div className="p-6">
