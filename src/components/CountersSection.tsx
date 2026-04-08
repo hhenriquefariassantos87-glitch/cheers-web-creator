@@ -23,11 +23,11 @@ const CountersSection = () => {
           Diversos modelos para combinar com o estilo do seu evento
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {counters.map((counter) => (
             <div key={counter.name} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-colors text-center">
               {counter.image && (
-                <div className="h-40 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img src={counter.image} alt={counter.name} className="w-full h-full object-cover" />
                 </div>
               )}
