@@ -9,12 +9,12 @@ const VideoSection = () => {
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="max-w-lg mx-auto rounded-2xl overflow-hidden shadow-2xl border border-primary/20">
+        <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-primary/20">
           <video
-            className="w-full object-contain"
+            className="w-full object-cover"
             controls
             playsInline
-            preload="metadata"
+            preload="auto"
           >
             <source src="/video-destaque.mp4" type="video/mp4" />
             Seu navegador não suporta vídeos.
