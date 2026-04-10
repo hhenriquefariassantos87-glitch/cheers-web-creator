@@ -7,7 +7,7 @@ const FloatingWhatsApp = () => {
         href="https://www.instagram.com/kaer.bartenders?igsh=MThyZ2txMWEyeXV1ag=="
         target="_blank"
         rel="noopener noreferrer"
-        className="w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite]"
+        className="w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
         style={{
           background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
           boxShadow: "0 0 20px rgba(225, 48, 108, 0.6), 0 0 40px rgba(225, 48, 108, 0.3)",
@@ -20,7 +20,7 @@ const FloatingWhatsApp = () => {
         href="https://wa.me/5513974277006"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite]"
+        className="w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
         style={{
           backgroundColor: "#25D366",
           boxShadow: "0 0 20px rgba(37, 211, 102, 0.6), 0 0 40px rgba(37, 211, 102, 0.3)",
