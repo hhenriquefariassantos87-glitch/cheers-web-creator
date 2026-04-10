@@ -1,6 +1,7 @@
 const drinkVideos = [
   { src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
   { src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
+  { src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
 ];
 
 const DrinkVideosSection = () => {
