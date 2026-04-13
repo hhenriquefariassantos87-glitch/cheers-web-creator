@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 
 const ContactSection = () => {
   const [form, setForm] = useState({
-    nome: "", email: "", telefone: "", plano: "", data: "", convidados: "", mensagem: "",
+    nome: "", email: "", telefone: "", plano: "", tipoEvento: "", data: "", convidados: "", mensagem: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
