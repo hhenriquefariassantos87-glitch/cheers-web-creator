@@ -3,12 +3,12 @@ import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 
 const ContactSection = () => {
   const [form, setForm] = useState({
-    nome: "", email: "", telefone: "", plano: "", data: "", convidados: "", mensagem: "",
+    nome: "", email: "", telefone: "", plano: "", tipoEvento: "", data: "", convidados: "", mensagem: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Olá! Gostaria de um orçamento.\n\nNome: ${form.nome}\nEmail: ${form.email}\nTelefone: ${form.telefone}\nPlano: ${form.plano}\nData: ${form.data}\nConvidados: ${form.convidados}\nMensagem: ${form.mensagem}`;
+    const msg = `Olá! Gostaria de um orçamento.\n\nNome: ${form.nome}\nEmail: ${form.email}\nTelefone: ${form.telefone}\nPlano: ${form.plano}\nTipo de Evento: ${form.tipoEvento}\nData: ${form.data}\nConvidados: ${form.convidados}\nMensagem: ${form.mensagem}`;
     window.open(`https://wa.me/5513974277006?text=${encodeURIComponent(msg)}`, "_blank");
   };
 
@@ -97,13 +97,27 @@ const ContactSection = () => {
                 <option value="Premium">Premium</option>
                 <option value="Luxo">Luxo</option>
               </select>
-              <input
-                type="date"
+              <select
                 className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
-                value={form.data}
-                onChange={(e) => setForm({ ...form, data: e.target.value })}
-              />
+                value={form.tipoEvento}
+                onChange={(e) => setForm({ ...form, tipoEvento: e.target.value })}
+              >
+                <option value="">Tipo de evento</option>
+                <option value="Casamento">Casamento</option>
+                <option value="Aniversário">Aniversário</option>
+                <option value="Festa Corporativa">Festa Corporativa</option>
+                <option value="Formatura">Formatura</option>
+                <option value="Confraternização">Confraternização</option>
+                <option value="Chá de Bebê">Chá de Bebê</option>
+                <option value="Outro">Outro</option>
+              </select>
             </div>
+            <input
+              type="date"
+              className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
+              value={form.data}
+              onChange={(e) => setForm({ ...form, data: e.target.value })}
+            />
             <input
               type="number"
               placeholder="Número de convidados"
