@@ -22,8 +22,8 @@ const FloatingWhatsApp = () => {
         rel="noopener noreferrer"
         className="w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
         style={{
-          background: "linear-gradient(135deg, #D4A853, #C6952B, #E8C774)",
-          boxShadow: "0 0 20px rgba(212, 168, 83, 0.6), 0 0 40px rgba(212, 168, 83, 0.3)",
+          backgroundColor: "#25D366",
+          boxShadow: "0 0 20px rgba(37, 211, 102, 0.6), 0 0 40px rgba(37, 211, 102, 0.3)",
         }}
         aria-label="WhatsApp"
       >
