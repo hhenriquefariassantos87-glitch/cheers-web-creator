@@ -25,14 +25,12 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16" style={{ animationDelay: "0.4s" }}>
-          <a
-            href="https://wa.me/5511982844587"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
             className="bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity shadow-gold"
           >
             Solicitar Orçamento
-          </a>
+          </button>
           <button
             onClick={() => document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" })}
             className="border border-primary/30 text-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:border-primary/60 transition-colors"
