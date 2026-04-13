@@ -97,13 +97,27 @@ const ContactSection = () => {
                 <option value="Premium">Premium</option>
                 <option value="Luxo">Luxo</option>
               </select>
-              <input
-                type="date"
+              <select
                 className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
-                value={form.data}
-                onChange={(e) => setForm({ ...form, data: e.target.value })}
-              />
+                value={form.tipoEvento}
+                onChange={(e) => setForm({ ...form, tipoEvento: e.target.value })}
+              >
+                <option value="">Tipo de evento</option>
+                <option value="Casamento">Casamento</option>
+                <option value="Aniversário">Aniversário</option>
+                <option value="Festa Corporativa">Festa Corporativa</option>
+                <option value="Formatura">Formatura</option>
+                <option value="Confraternização">Confraternização</option>
+                <option value="Chá de Bebê">Chá de Bebê</option>
+                <option value="Outro">Outro</option>
+              </select>
             </div>
+            <input
+              type="date"
+              className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
+              value={form.data}
+              onChange={(e) => setForm({ ...form, data: e.target.value })}
+            />
             <input
               type="number"
               placeholder="Número de convidados"
