@@ -47,9 +47,9 @@ const PackagesSection = () => {
           {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className={`rounded-xl p-8 border relative ${
+              className={`rounded-xl p-8 border relative transition-transform duration-300 hover:scale-105 ${
                 pkg.popular
-                  ? "bg-card border-primary shadow-gold scale-105"
+                  ? "bg-card border-primary shadow-gold scale-105 hover:scale-110"
                   : "bg-card border-border"
               }`}
             >
