@@ -9,7 +9,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Olá! Gostaria de um orçamento.\n\nNome: ${form.nome}\nEmail: ${form.email}\nTelefone: ${form.telefone}\nPlano: ${form.plano}\nData: ${form.data}\nConvidados: ${form.convidados}\nMensagem: ${form.mensagem}`;
-    window.open(`https://wa.me/5511982844587?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/5513974277006?text=${encodeURIComponent(msg)}`, "_blank");
   };
 
   return (
