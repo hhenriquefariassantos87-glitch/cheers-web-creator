@@ -9,18 +9,30 @@ const stats = [
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      <div className="absolute inset-0">
+    <section id="hero" className="relative md:min-h-screen flex flex-col md:items-center md:justify-center overflow-hidden bg-background pt-20 md:pt-0">
+      {/* Mobile: card com a foto inteira */}
+      <div className="md:hidden px-4 mb-8">
+        <div className="rounded-2xl overflow-hidden shadow-gold border border-primary/20">
+          <img
+            src={heroBanner}
+            alt="Bartenders Kaer"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Desktop: foto como background */}
+      <div className="hidden md:block absolute inset-0">
         <img
           src={heroBanner}
           alt="Bartenders Kaer"
-          className="w-full h-full object-contain md:object-cover object-center"
+          className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-background/75" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 text-center pt-20">
+      <div className="relative z-10 container mx-auto px-4 text-center pb-12 md:pt-20">
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
           Bartenders <span className="text-gradient-gold">Premium</span> para seus Eventos
         </h1>
