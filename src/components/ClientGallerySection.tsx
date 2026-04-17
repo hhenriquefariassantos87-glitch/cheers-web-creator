@@ -9,10 +9,22 @@ import cliente7 from "@/assets/cliente-7.jpg";
 import cliente8 from "@/assets/cliente-8.jpg";
 import cliente9 from "@/assets/cliente-9.jpg";
 import cliente10 from "@/assets/cliente-10.jpg";
+import cliente11 from "@/assets/cliente-11.jpg";
+import cliente12 from "@/assets/cliente-12.jpg";
+import cliente13 from "@/assets/cliente-13.jpg";
+import cliente14 from "@/assets/cliente-14.jpg";
+import cliente15 from "@/assets/cliente-15.jpg";
+import cliente16 from "@/assets/cliente-16.jpg";
+import cliente17 from "@/assets/cliente-17.jpg";
+import cliente18 from "@/assets/cliente-18.jpg";
+import cliente19 from "@/assets/cliente-19.jpg";
+import cliente20 from "@/assets/cliente-20.jpg";
 
 const images = [
   cliente1, cliente2, cliente3, cliente4, cliente5,
   cliente6, cliente7, cliente8, cliente9, cliente10,
+  cliente11, cliente12, cliente13, cliente14, cliente15,
+  cliente16, cliente17, cliente18, cliente19, cliente20,
 ];
 
 const ClientGallerySection = () => {
