@@ -47,13 +47,13 @@ const GallerySection = () => {
           {images.map((img, i) => (
             <div
               key={i}
-              className="aspect-square rounded-lg overflow-hidden cursor-pointer group bg-muted flex items-center justify-center transition-transform duration-300 hover:scale-105"
+              className="aspect-square rounded-lg overflow-hidden cursor-pointer group bg-muted transition-transform duration-300 hover:scale-105"
               onClick={() => setSelected(img)}
             >
               <img
                 src={img}
                 alt={`Galeria ${i + 1}`}
-                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </div>
           ))}
