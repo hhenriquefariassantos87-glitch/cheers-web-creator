@@ -20,8 +20,18 @@ import galeriaBar2 from "@/assets/galeria-bar2.jpg";
 import galeriaFrutas from "@/assets/galeria-frutas.jpg";
 import galeriaCopos from "@/assets/galeria-copos.jpg";
 import galeriaBalcao from "@/assets/galeria-balcao.jpg";
+import drinkAperol from "@/assets/galeria-drink-aperol.jpg";
+import drinkChocolate from "@/assets/galeria-drink-chocolate.jpg";
+import drinkMartini from "@/assets/galeria-drink-martini.jpg";
+import drinkTropical from "@/assets/galeria-drink-tropical.jpg";
+import drinkPitaya from "@/assets/galeria-drink-pitaya.jpg";
 
-const images = [event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11, event12, event13, event14, event15, event16, galeriaBar1, galeriaBar2, galeriaFrutas, galeriaCopos, galeriaBalcao];
+const images = [
+  event1, event2, event3, event4, event5, event6, event7, event8,
+  event9, event10, event11, event12, event13, event14, event15, event16,
+  galeriaBar1, galeriaBar2, galeriaFrutas, galeriaCopos, galeriaBalcao,
+  drinkAperol, drinkChocolate, drinkMartini, drinkTropical, drinkPitaya,
+];
 
 const GallerySection = () => {
   const [selected, setSelected] = useState<string | null>(null);
@@ -37,10 +47,14 @@ const GallerySection = () => {
           {images.map((img, i) => (
             <div
               key={i}
-              className="aspect-square rounded-lg overflow-hidden cursor-pointer group"
+              className="aspect-square rounded-lg overflow-hidden cursor-pointer group bg-muted flex items-center justify-center transition-transform duration-300 hover:scale-105"
               onClick={() => setSelected(img)}
             >
-              <img src={img} alt={`Evento ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src={img}
+                alt={`Galeria ${i + 1}`}
+                className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
           ))}
         </div>
