@@ -10,15 +10,15 @@ const stats = [
 const HeroSection = () => {
   return (
     <section id="hero" className="relative md:min-h-screen flex flex-col md:items-center md:justify-center overflow-hidden bg-background pt-20 md:pt-0">
-      {/* Mobile: card com a foto inteira */}
-      <div className="md:hidden px-4 mb-8">
-        <div className="rounded-2xl overflow-hidden shadow-gold border border-primary/20">
-          <img
-            src={heroBanner}
-            alt="Bartenders Kaer"
-            className="w-full h-auto object-contain"
-          />
-        </div>
+      {/* Mobile: foto inteira com degradê nas bordas */}
+      <div className="md:hidden relative mb-8">
+        <img
+          src={heroBanner}
+          alt="Bartenders Kaer"
+          className="w-full h-auto object-contain"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* Desktop: foto como background */}
