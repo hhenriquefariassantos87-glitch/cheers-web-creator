@@ -9,6 +9,7 @@ import VideoSection from "@/components/VideoSection";
 import DrinkVideosSection from "@/components/DrinkVideosSection";
 import AboutSection from "@/components/AboutSection";
 import PackagesSection from "@/components/PackagesSection";
+import MenuSection from "@/components/MenuSection";
 import CountersSection from "@/components/CountersSection";
 import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
@@ -28,6 +29,7 @@ const Index = () => {
       <DrinkVideosSection />
       <AboutSection />
       <PackagesSection />
+      <MenuSection />
       <CountersSection />
       <ContactSection />
       <FooterSection />
