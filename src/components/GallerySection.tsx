@@ -31,6 +31,10 @@ import galeriaBartenderShaker from "@/assets/galeria-bartender-shaker.jpg";
 import galeriaBartenderAperol from "@/assets/galeria-bartender-aperol.jpg";
 import galeriaBalcaoCapitonePreto from "@/assets/galeria-balcao-capitone-preto.jpg";
 import galeriaBalcaoCapitoneDourado from "@/assets/galeria-balcao-capitone-dourado.jpg";
+import galeriaDrinkMorango from "@/assets/galeria-drink-morango.jpg";
+import galeriaMojitoPreparo from "@/assets/galeria-mojito-preparo.jpg";
+import galeriaPitaya from "@/assets/galeria-pitaya.jpg";
+import galeriaEquipeBar from "@/assets/galeria-equipe-bar.jpg";
 
 const images = [
   event1, event2, event3, event4, event5, event6, event7, event8,
@@ -39,6 +43,7 @@ const images = [
   drinkAperol, drinkChocolate, drinkMartini, drinkTropical, drinkPitaya,
   galeriaMargarita, galeriaBarGabrielly, galeriaBartenderShaker,
   galeriaBartenderAperol, galeriaBalcaoCapitonePreto, galeriaBalcaoCapitoneDourado,
+  galeriaDrinkMorango, galeriaMojitoPreparo, galeriaPitaya, galeriaEquipeBar,
 ];
 
 const GallerySection = () => {
