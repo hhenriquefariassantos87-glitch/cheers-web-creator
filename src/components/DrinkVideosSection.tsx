@@ -2,6 +2,8 @@ const drinkVideos = [
   { src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
   { src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
   { src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
+  { src: "/videos/drink-4.mp4", title: "Mixologia em Destaque" },
+  { src: "/videos/drink-5.mp4", title: "Arte do Bartender" },
 ];
 
 const DrinkVideosSection = () => {
