@@ -48,7 +48,7 @@ const FooterSection = () => {
             <h4 className="font-display font-bold text-foreground mb-4">Contato</h4>
             <ul className="space-y-2 text-muted-foreground font-body text-sm">
               <li>(13) 97427-7006</li>
-              <li>contato@absbartenders.com.br</li>
+              <li>kaerbartender@gmail.com</li>
               <li>São Paulo, SP</li>
             </ul>
             <div className="flex gap-6 mt-4">
