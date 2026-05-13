@@ -155,9 +155,6 @@ const PackagesSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="text-xs text-muted-foreground font-body border-t border-border pt-4">
-                Equipe: {pkg.team}
-              </div>
               <a
                 href="https://wa.me/5513988127144"
                 target="_blank"
@@ -209,9 +206,6 @@ const PackagesSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="text-xs text-muted-foreground font-body border-t border-border pt-4">
-                Equipe: {pkg.team}
-              </div>
               <a
                 href="https://wa.me/5513988127144"
                 target="_blank"
@@ -263,9 +257,6 @@ const PackagesSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="text-xs text-muted-foreground font-body border-t border-border pt-4">
-                Equipe: {pkg.team}
-              </div>
               <a
                 href="https://wa.me/5513988127144"
                 target="_blank"
