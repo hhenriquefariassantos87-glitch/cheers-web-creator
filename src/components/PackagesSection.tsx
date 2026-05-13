@@ -97,7 +97,6 @@ const packagesAbove70 = [
     features: [
       "Open bar com cardápio Premium",
       "5 horas de festa",
-      "Acima de 70 convidados",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
     ],
@@ -268,17 +267,6 @@ const PackagesSection = () => {
           ))}
         </div>
 
-        <div className="max-w-2xl mx-auto bg-card rounded-xl border border-border p-8">
-          <h3 className="font-display text-xl font-bold text-center mb-6 text-foreground">Cálculo de Equipe</h3>
-          <div className="space-y-4">
-            {teamCalc.map((item) => (
-              <div key={item.guests} className="flex justify-between items-center py-3 border-b border-border last:border-0">
-                <span className="text-foreground font-body">{item.guests}</span>
-                <span className="text-primary font-body font-semibold">{item.team}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
