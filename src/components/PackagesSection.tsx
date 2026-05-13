@@ -159,7 +159,7 @@ const PackagesSection = () => {
                 Equipe: {pkg.team}
               </div>
               <a
-                href="https://wa.me/5513974277006"
+                href="https://wa.me/5513988127144"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
@@ -213,7 +213,7 @@ const PackagesSection = () => {
                 Equipe: {pkg.team}
               </div>
               <a
-                href="https://wa.me/5513974277006"
+                href="https://wa.me/5513988127144"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
@@ -267,7 +267,7 @@ const PackagesSection = () => {
                 Equipe: {pkg.team}
               </div>
               <a
-                href="https://wa.me/5513974277006"
+                href="https://wa.me/5513988127144"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
