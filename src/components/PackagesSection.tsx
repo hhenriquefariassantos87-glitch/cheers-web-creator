@@ -150,7 +150,7 @@ const PackagesSection = () => {
                 ))}
               </ul>
               <a
-                href="https://wa.me/5513988127144"
+                href="https://wa.me/5513974277006"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
@@ -201,7 +201,7 @@ const PackagesSection = () => {
                 ))}
               </ul>
               <a
-                href="https://wa.me/5513988127144"
+                href="https://wa.me/5513974277006"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
@@ -252,7 +252,7 @@ const PackagesSection = () => {
                 ))}
               </ul>
               <a
-                href="https://wa.me/5513988127144"
+                href="https://wa.me/5513974277006"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
