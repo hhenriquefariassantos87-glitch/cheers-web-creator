@@ -30,7 +30,7 @@ const packages70 = [
     name: "Favoritos",
     description: "Open bar com clássicos que nunca saem da moda",
     features: [
-      "Open bar com cardápio Favoritos",
+      "Open bar com equipe completa",
       "5 horas de festa",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
@@ -42,7 +42,7 @@ const packages70 = [
     name: "Seleção",
     description: "Open bar com nossa seleção especial de drinks",
     features: [
-      "Open bar com cardápio Seleção",
+      "Open bar com equipe completa",
       "5 horas de festa",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
@@ -55,7 +55,7 @@ const packages70 = [
     name: "Premium",
     description: "Open bar premium para momentos memoráveis",
     features: [
-      "Open bar com cardápio Premium",
+      "Open bar com equipe completa",
       "5 horas de festa",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
@@ -70,7 +70,7 @@ const packagesAbove70 = [
     name: "Favoritos",
     description: "Open bar com clássicos para grandes eventos",
     features: [
-      "Open bar com cardápio Favoritos",
+      "Open bar com equipe completa",
       "5 horas de festa",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
@@ -82,7 +82,7 @@ const packagesAbove70 = [
     name: "Seleção",
     description: "Open bar com nossa seleção especial para grandes eventos",
     features: [
-      "Open bar com cardápio Seleção",
+      "Open bar com equipe completa",
       "5 horas de festa",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
@@ -95,7 +95,7 @@ const packagesAbove70 = [
     name: "Premium",
     description: "Open bar premium para grandes celebrações",
     features: [
-      "Open bar com cardápio Premium",
+      "Open bar com equipe completa",
       "5 horas de festa",
       "Copos e taças de vidro próprios",
       "Estrutura, gelo, materiais e insumos completos",
