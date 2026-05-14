@@ -37,7 +37,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground font-body">Email</div>
-                  <div className="text-foreground font-body">contato@absbartenders.com.br</div>
+                  <div className="text-foreground font-body">kaerbartender@gmail.com</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
