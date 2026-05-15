@@ -1,30 +1,5 @@
 import { Check, Star } from "lucide-react";
 
-const packages = [
-  {
-    name: "Favoritos",
-    description: "Ideal para eventos pequenos e familiares",
-    features: ["Bartender profissional", "Equipamentos básicos", "Cardápio de drinks", "Setup incluído"],
-    team: "1 Barman + 1 Barmec",
-    popular: false,
-  },
-  {
-    name: "Seleção",
-    badge: "MAIS POPULAR",
-    description: "Perfeito para casamentos e eventos médios",
-    features: ["Bartenders", "Equipamentos completos", "Drinks premium", "Decoração temática", "Coqueteleira personalizada", "Setup incluído"],
-    team: "2 Barmen + 2 Barmecs",
-    popular: true,
-  },
-  {
-    name: "Premium",
-    description: "Experiência completa para grandes eventos",
-    features: ["Bartenders especializados", "Equipamentos premium", "Cardápio ilimitado", "Bar móvel", "Show flair", "Drinks exclusivos", "Decoração completa", "Setup incluído"],
-    team: "3+ Barmen + Equipe completa",
-    popular: false,
-  },
-];
-
 const packages70 = [
   {
     name: "Favoritos",
