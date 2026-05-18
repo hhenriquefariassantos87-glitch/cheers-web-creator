@@ -43,7 +43,7 @@ const ServicesSection = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  style={{ objectPosition: service.title === "Drinks Exclusivos" ? "center bottom" : "center" }}
+                  style={{ objectPosition: service.title === "Drinks Exclusivos" ? "center 80%" : "center" }}
                 />
               </div>
               <div className="p-6">
