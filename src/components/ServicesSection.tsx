@@ -42,8 +42,7 @@ const ServicesSection = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  style={{ objectPosition: service.title === "Drinks Exclusivos" ? "center 80%" : "center" }}
+                  className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${service.title === "Drinks Exclusivos" ? "object-contain bg-card" : "object-cover"}`}
                 />
               </div>
               <div className="p-6">
