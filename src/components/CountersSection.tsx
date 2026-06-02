@@ -2,12 +2,14 @@ import balcaoLedImg from "@/assets/balcao-led.jpg";
 import balcaoModernoImg from "@/assets/balcao-moderno.jpg";
 import balcaoClassicoImg from "@/assets/balcao-classico.jpg";
 import balcaoRusticoImg from "@/assets/balcao-rustico.jpg";
+import balcaoCapitone from "@/assets/balcao-capitone.jpg.asset.json";
 
 const counters = [
   { name: "Balcão Clássico", description: "Elegante e versátil", image: balcaoClassicoImg },
   { name: "Balcão de LED", description: "Design com LED integrada", image: balcaoLedImg },
   { name: "Balcão Rústico", description: "Para eventos ao ar livre", image: balcaoRusticoImg },
   { name: "Balcão Moderno", description: "Linhas contemporâneas", image: balcaoModernoImg },
+  { name: "Balcão Capitonê", description: "Sofisticado com acabamento dourado", image: balcaoCapitone.url },
 ];
 
 const CountersSection = () => {
@@ -36,6 +38,10 @@ const CountersSection = () => {
             </div>
           ))}
         </div>
+
+        <p className="text-muted-foreground text-center mt-12 max-w-2xl mx-auto font-body text-sm border border-primary/20 rounded-lg p-4 bg-card">
+          <span className="text-gradient-gold font-semibold">Aviso:</span> a transferência do balcão até o local do evento possui um valor de frete à parte, calculado conforme a distância.
+        </p>
       </div>
     </section>
   );
