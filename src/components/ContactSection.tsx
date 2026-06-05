@@ -47,7 +47,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Olá! Gostaria de um orçamento.\n\nNome: ${form.nome}\nEmail: ${form.email}\nTelefone: ${form.telefone}\nPlano: ${form.plano}\nCardápio: ${form.cardapio}\nTipo de Evento: ${form.tipoEvento}\nData: ${form.data}\nConvidados: ${form.convidados}\nMensagem: ${form.mensagem}`;
-    window.open(`https://wa.me/5513974277006?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://api.whatsapp.com/send?phone=5513974277006&text=${encodeURIComponent(msg)}`, "_blank");
   };
 
   const selectedCardapio = cardapios.find((c) => c.id === form.cardapio);
