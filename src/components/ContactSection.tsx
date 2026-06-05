@@ -151,6 +151,30 @@ const ContactSection = () => {
                 <option value="Outro">Outro</option>
               </select>
             </div>
+            <select
+              className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
+              value={form.cardapio}
+              onChange={(e) => setForm({ ...form, cardapio: e.target.value })}
+            >
+              <option value="">Selecione o cardápio</option>
+              {cardapios.map((c) => (
+                <option key={c.id} value={c.id}>{c.title}</option>
+              ))}
+            </select>
+            {selectedCardapio && (
+              <div className="bg-card/60 border border-primary/20 rounded-lg p-4">
+                <p className="font-display text-primary text-sm mb-3 uppercase tracking-wide">
+                  {selectedCardapio.title}
+                </p>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
+                  {selectedCardapio.drinks.map((d) => (
+                    <span key={d} className="font-body text-xs text-foreground/70">
+                      • {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
             <input
               type="date"
               className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
