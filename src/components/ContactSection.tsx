@@ -93,9 +93,8 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, plano: e.target.value })}
               >
                 <option value="">Selecione o plano</option>
-                <option value="Básico">Básico</option>
-                <option value="Premium">Premium</option>
-                <option value="Luxo">Luxo</option>
+                <option value="Até 50 convidados">Até 50 convidados</option>
+                <option value="Acima de 50 convidados">Acima de 50 convidados</option>
               </select>
               <select
                 className="w-full bg-card border border-border rounded-lg px-4 py-3 text-foreground font-body text-sm focus:outline-none focus:border-primary"
