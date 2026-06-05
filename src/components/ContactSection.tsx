@@ -1,16 +1,56 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 
+const cardapios: { id: string; title: string; drinks: string[] }[] = [
+  {
+    id: "Cardápio Premium",
+    title: "Cardápio Premium",
+    drinks: [
+      "Caipirinha", "Caipiroska", "Saquerita", "Mojito", "Moscow Mule",
+      "Caipiríssima", "Campari Tonic", "Fitzgerald", "Piña Colada",
+      "Aperol Spritz", "Negroni", "Gin & Tônica (e variações)", "Drink Surpresa",
+    ],
+  },
+  {
+    id: "Cardápio para Todos",
+    title: "Cardápio para Todos (sem álcool)",
+    drinks: [
+      "Caipi Fake", "Pink Lemonade", "Kiss on the Beach", "Espanholinha",
+      "Praia Australiana", "Italian Soda", "Piña Descolada",
+      "Batidinha (sem álcool)", "Baby Kiss", "Mojitinho",
+    ],
+  },
+  {
+    id: "Seleção Especial",
+    title: "Seleção Especial",
+    drinks: [
+      "Caipirinha", "Caipiroska", "Saquerita", "Espanhola",
+      "Sex on the Beach", "Tropical Drink", "Brazuca Sour", "Lagoa Azul",
+      "Caipi Fake", "Kiss on the Beach", "Lagoa Azul (sem álcool)", "Drink Surpresa",
+    ],
+  },
+  {
+    id: "Favoritos do Público",
+    title: "Favoritos do Público",
+    drinks: [
+      "Caipirinha", "Caipiroska", "Saquerita", "Batida", "Espanhola",
+      "Caipi Fake", "Espanholinha", "Drink Surpresa",
+    ],
+  },
+];
+
 const ContactSection = () => {
   const [form, setForm] = useState({
-    nome: "", email: "", telefone: "", plano: "", tipoEvento: "", data: "", convidados: "", mensagem: "",
+    nome: "", email: "", telefone: "", plano: "", cardapio: "", tipoEvento: "", data: "", convidados: "", mensagem: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Olá! Gostaria de um orçamento.\n\nNome: ${form.nome}\nEmail: ${form.email}\nTelefone: ${form.telefone}\nPlano: ${form.plano}\nTipo de Evento: ${form.tipoEvento}\nData: ${form.data}\nConvidados: ${form.convidados}\nMensagem: ${form.mensagem}`;
+    const msg = `Olá! Gostaria de um orçamento.\n\nNome: ${form.nome}\nEmail: ${form.email}\nTelefone: ${form.telefone}\nPlano: ${form.plano}\nCardápio: ${form.cardapio}\nTipo de Evento: ${form.tipoEvento}\nData: ${form.data}\nConvidados: ${form.convidados}\nMensagem: ${form.mensagem}`;
     window.open(`https://wa.me/5513974277006?text=${encodeURIComponent(msg)}`, "_blank");
   };
+
+  const selectedCardapio = cardapios.find((c) => c.id === form.cardapio);
 
   return (
     <section id="contato" className="py-20">
