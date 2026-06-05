@@ -17,7 +17,7 @@ const FloatingWhatsApp = () => {
         <Instagram size={30} className="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]" />
       </a>
       <a
-        href="https://wa.me/5513974277006"
+        href="https://api.whatsapp.com/send?phone=5513974277006"
         target="_blank"
         rel="noopener noreferrer"
         className="w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
