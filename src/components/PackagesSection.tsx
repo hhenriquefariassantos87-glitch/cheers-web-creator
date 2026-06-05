@@ -1,90 +1,16 @@
-import { Check, Star } from "lucide-react";
+import { Check, Users, UsersRound } from "lucide-react";
 
-const packages70 = [
+const packages = [
   {
-    name: "Favoritos",
-    description: "Open bar com clássicos que nunca saem da moda",
-    features: [
-      "Open bar com equipe completa",
-      "5 horas de festa",
-      "Copos e taças de vidro próprios",
-      "Estrutura, gelo, materiais e insumos completos",
-    ],
-    team: "2 Bartenders + 1 Auxiliar",
-    popular: false,
+    name: "Até 50 Convidados",
+    icon: Users,
+    features: ["1 Bartender", "Estrutura pequena"],
   },
   {
-    name: "Seleção",
-    description: "Open bar com nossa seleção especial de drinks",
-    features: [
-      "Open bar com equipe completa",
-      "5 horas de festa",
-      "Copos e taças de vidro próprios",
-      "Estrutura, gelo, materiais e insumos completos",
-    ],
-    team: "2 Bartenders + 1 Auxiliar",
-    popular: true,
-    badge: "RECOMENDADO",
+    name: "Acima de 50 Convidados",
+    icon: UsersRound,
+    features: ["2 Bartenders ou mais", "Estrutura grande"],
   },
-  {
-    name: "Premium",
-    description: "Open bar premium para momentos memoráveis",
-    features: [
-      "Open bar com equipe completa",
-      "5 horas de festa",
-      "Copos e taças de vidro próprios",
-      "Estrutura, gelo, materiais e insumos completos",
-    ],
-    team: "2 Bartenders + 1 Auxiliar",
-    popular: false,
-  },
-];
-
-const packagesAbove70 = [
-  {
-    name: "Favoritos",
-    description: "Open bar com clássicos para grandes eventos",
-    features: [
-      "Open bar com equipe completa",
-      "5 horas de festa",
-      "Copos e taças de vidro próprios",
-      "Estrutura, gelo, materiais e insumos completos",
-    ],
-    team: "Equipe completa",
-    popular: false,
-  },
-  {
-    name: "Seleção",
-    description: "Open bar com nossa seleção especial para grandes eventos",
-    features: [
-      "Open bar com equipe completa",
-      "5 horas de festa",
-      "Copos e taças de vidro próprios",
-      "Estrutura, gelo, materiais e insumos completos",
-    ],
-    team: "Equipe completa",
-    popular: true,
-    badge: "RECOMENDADO",
-  },
-  {
-    name: "Premium",
-    description: "Open bar premium para grandes celebrações",
-    features: [
-      "Open bar com equipe completa",
-      "5 horas de festa",
-      "Copos e taças de vidro próprios",
-      "Estrutura, gelo, materiais e insumos completos",
-    ],
-    team: "Equipe completa",
-    popular: false,
-  },
-];
-
-const teamCalc = [
-  { guests: "Até 30 pessoas", team: "1 Bartender" },
-  { guests: "60 pessoas", team: "2 Bartenders" },
-  { guests: "90 pessoas", team: "3 Bartenders" },
-  { guests: "120+ pessoas", team: "4+ Bartenders" },
 ];
 
 const PackagesSection = () => {
@@ -98,37 +24,22 @@ const PackagesSection = () => {
           Escolha o pacote ideal para o seu evento
         </p>
 
-        <div className="text-center mb-10">
-          <h3 className="font-display text-2xl md:text-4xl font-bold mb-2">
-            Pacotes para até <span className="text-gradient-gold">70 Convidados</span>
-          </h3>
-          <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Open bar completo com 5 horas de festa e estrutura inclusa
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-          {packages70.map((pkg) => (
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className={`rounded-xl p-8 border relative transition-transform duration-300 hover:scale-105 ${
-                pkg.popular
-                  ? "bg-card border-primary shadow-gold scale-105 hover:scale-110"
-                  : "bg-card border-border"
-              }`}
+              className="rounded-xl p-8 border bg-card border-border transition-transform duration-300 hover:scale-105"
             >
-              {pkg.popular && pkg.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground px-4 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                  <Star size={12} />
-                  {pkg.badge}
-                </div>
-              )}
-              <h3 className="font-display text-2xl font-bold text-foreground mb-2">{pkg.name}</h3>
-              <p className="text-muted-foreground font-body text-sm mb-6">{pkg.description}</p>
-              <ul className="space-y-3 mb-6">
+              <div className="flex items-center justify-center mb-6">
+                <pkg.icon size={48} className="text-primary" />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-foreground text-center mb-6">
+                {pkg.name}
+              </h3>
+              <ul className="space-y-4 mb-8">
                 {pkg.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-foreground/80 font-body text-sm">
-                    <Check size={16} className="text-primary flex-shrink-0" />
+                  <li key={f} className="flex items-center gap-3 text-foreground/80 font-body">
+                    <Check size={20} className="text-primary flex-shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -137,69 +48,13 @@ const PackagesSection = () => {
                 href="https://wa.me/5513974277006"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
-                  pkg.popular
-                    ? "bg-gradient-gold text-primary-foreground"
-                    : "border border-primary/30 text-foreground hover:border-primary/60"
-                }`}
+                className="block text-center py-3 rounded-lg font-semibold transition-opacity border border-primary/30 text-foreground hover:border-primary/60"
               >
                 Solicitar Orçamento
               </a>
             </div>
           ))}
         </div>
-
-        <div className="text-center mb-10">
-          <h3 className="font-display text-2xl md:text-4xl font-bold mb-2">
-            Pacotes para <span className="text-gradient-gold">acima de 70 Convidados</span>
-          </h3>
-          <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Open bar com equipe completa, 5 horas de festa e estrutura inclusa
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-          {packagesAbove70.map((pkg) => (
-            <div
-              key={pkg.name}
-              className={`rounded-xl p-8 border relative transition-transform duration-300 hover:scale-105 ${
-                pkg.popular
-                  ? "bg-card border-primary shadow-gold scale-105 hover:scale-110"
-                  : "bg-card border-border"
-              }`}
-            >
-              {pkg.popular && pkg.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground px-4 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                  <Star size={12} />
-                  {pkg.badge}
-                </div>
-              )}
-              <h3 className="font-display text-2xl font-bold text-foreground mb-2">{pkg.name}</h3>
-              <p className="text-muted-foreground font-body text-sm mb-6">{pkg.description}</p>
-              <ul className="space-y-3 mb-6">
-                {pkg.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-foreground/80 font-body text-sm">
-                    <Check size={16} className="text-primary flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="https://wa.me/5513974277006"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`mt-4 block text-center py-3 rounded-lg font-semibold transition-opacity ${
-                  pkg.popular
-                    ? "bg-gradient-gold text-primary-foreground"
-                    : "border border-primary/30 text-foreground hover:border-primary/60"
-                }`}
-              >
-                Solicitar Orçamento
-              </a>
-            </div>
-          ))}
-        </div>
-
       </div>
     </section>
   );
