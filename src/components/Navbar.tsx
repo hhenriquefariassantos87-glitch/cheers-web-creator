@@ -41,7 +41,7 @@ const Navbar = () => {
             </button>
           ))}
           <a
-            href="https://wa.me/5513974277006"
+            href="https://api.whatsapp.com/send?phone=5513974277006"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-gold text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity flex items-center gap-2"
@@ -68,7 +68,7 @@ const Navbar = () => {
             </button>
           ))}
           <a
-            href="https://wa.me/5513974277006"
+            href="https://api.whatsapp.com/send?phone=5513974277006"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 bg-gradient-gold text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center gap-2"
