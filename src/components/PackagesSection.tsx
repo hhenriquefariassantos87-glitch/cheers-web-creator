@@ -45,7 +45,7 @@ const PackagesSection = () => {
                 ))}
               </ul>
               <a
-                href="https://wa.me/5513974277006"
+                href="https://api.whatsapp.com/send?phone=5513974277006"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center py-3 rounded-lg font-semibold transition-opacity border border-primary/30 text-foreground hover:border-primary/60"
