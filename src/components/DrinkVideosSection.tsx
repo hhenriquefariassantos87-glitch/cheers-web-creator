@@ -1,9 +1,10 @@
 const drinkVideos = [
-  { src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
-  { src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
-  { src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
-  { src: "/videos/drink-4.mp4", title: "Mixologia em Destaque" },
-  { src: "/videos/drink-5.mp4", title: "Arte do Bartender" },
+  { type: "youtube" as const, src: "https://www.youtube.com/embed/reNVC2F3fmQ?feature=oembed&rel=0", title: "Drink em Ação" },
+  { type: "local" as const, src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
+  { type: "local" as const, src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
+  { type: "local" as const, src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
+  { type: "local" as const, src: "/videos/drink-4.mp4", title: "Mixologia em Destaque" },
+  { type: "local" as const, src: "/videos/drink-5.mp4", title: "Arte do Bartender" },
 ];
 
 const DrinkVideosSection = () => {
@@ -26,15 +27,29 @@ const DrinkVideosSection = () => {
               key={index}
               className="rounded-2xl overflow-hidden shadow-2xl border border-primary/20 bg-card"
             >
-              <video
-                className="w-full aspect-[9/16] object-cover"
-                controls
-                playsInline
-                preload="metadata"
-              >
-                <source src={video.src} type="video/mp4" />
-                Seu navegador não suporta vídeos.
-              </video>
+              {video.type === "youtube" ? (
+                <div className="relative w-full aspect-[9/16]">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src={video.src}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              ) : (
+                <video
+                  className="w-full aspect-[9/16] object-cover"
+                  controls
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src={video.src} type="video/mp4" />
+                  Seu navegador não suporta vídeos.
+                </video>
+              )}
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold text-foreground">{video.title}</h3>
               </div>
