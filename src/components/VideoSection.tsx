@@ -9,16 +9,17 @@ const VideoSection = () => {
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-primary/20">
-          <video
-            className="w-full object-cover"
-            controls
-            playsInline
-            preload="auto"
-          >
-            <source src="/video-destaque.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeos.
-          </video>
+        <div className="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-2xl border border-primary/20">
+          <div className="relative w-full" style={{ aspectRatio: "9/16" }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/reNVC2F3fmQ"
+              title="Vídeo do YouTube"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
     </section>
