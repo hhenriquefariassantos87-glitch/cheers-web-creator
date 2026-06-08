@@ -1,9 +1,10 @@
 const drinkVideos = [
-  { src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
-  { src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
-  { src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
-  { src: "/videos/drink-4.mp4", title: "Mixologia em Destaque" },
-  { src: "/videos/drink-5.mp4", title: "Arte do Bartender" },
+  { type: "youtube" as const, src: "https://www.youtube.com/embed/reNVC2F3fmQ?feature=oembed&rel=0", title: "Drink em Ação" },
+  { type: "local" as const, src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
+  { type: "local" as const, src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
+  { type: "local" as const, src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
+  { type: "local" as const, src: "/videos/drink-4.mp4", title: "Mixologia em Destaque" },
+  { type: "local" as const, src: "/videos/drink-5.mp4", title: "Arte do Bartender" },
 ];
 
 const DrinkVideosSection = () => {
