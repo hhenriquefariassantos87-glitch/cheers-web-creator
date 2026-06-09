@@ -27,7 +27,7 @@ const DrinkVideosSection = () => {
               key={index}
               className="rounded-2xl overflow-hidden shadow-2xl border border-primary/20 bg-card"
             >
-              {video.type === "youtube" || video.type === "tiktok" ? (
+              {video.type === "tiktok" ? (
                 <div className="relative w-full aspect-[9/16]">
                   <iframe
                     className="absolute inset-0 w-full h-full"
