@@ -1,5 +1,5 @@
 const drinkVideos = [
-  { type: "youtube" as const, src: "https://www.youtube.com/embed/reNVC2F3fmQ?feature=oembed&rel=0", title: "Drink em Ação" },
+  { type: "tiktok" as const, src: "https://www.tiktok.com/embed/v2/7649533247059332373", title: "Drink em Ação" },
   { type: "local" as const, src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
   { type: "local" as const, src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
   { type: "local" as const, src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
@@ -27,7 +27,7 @@ const DrinkVideosSection = () => {
               key={index}
               className="rounded-2xl overflow-hidden shadow-2xl border border-primary/20 bg-card"
             >
-              {video.type === "youtube" ? (
+              {video.type === "tiktok" ? (
                 <div className="relative w-full aspect-[9/16]">
                   <iframe
                     className="absolute inset-0 w-full h-full"
