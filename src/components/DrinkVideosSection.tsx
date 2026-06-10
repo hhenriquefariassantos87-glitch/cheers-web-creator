@@ -1,5 +1,5 @@
 const drinkVideos = [
-  { type: "tiktok" as const, src: "https://www.tiktok.com/embed/v2/7649533247059332373", title: "Drink em Ação" },
+  { type: "vimeo" as const, src: "https://player.vimeo.com/video/1200045226?title=0&byline=0&portrait=0", title: "Drink em Ação" },
   { type: "local" as const, src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
   { type: "local" as const, src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
   { type: "local" as const, src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
@@ -27,7 +27,17 @@ const DrinkVideosSection = () => {
               key={index}
               className="rounded-2xl overflow-hidden shadow-2xl border border-primary/20 bg-card"
             >
-              {video.type === "tiktok" ? (
+              {video.type === "local" ? (
+                <video
+                  className="w-full aspect-[9/16] object-cover"
+                  controls
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src={video.src} type="video/mp4" />
+                  Seu navegador não suporta vídeos.
+                </video>
+              ) : (
                 <div className="relative w-full aspect-[9/16]">
                   <iframe
                     className="absolute inset-0 w-full h-full"
@@ -39,16 +49,6 @@ const DrinkVideosSection = () => {
                     allowFullScreen
                   />
                 </div>
-              ) : (
-                <video
-                  className="w-full aspect-[9/16] object-cover"
-                  controls
-                  playsInline
-                  preload="metadata"
-                >
-                  <source src={video.src} type="video/mp4" />
-                  Seu navegador não suporta vídeos.
-                </video>
               )}
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold text-foreground">{video.title}</h3>
