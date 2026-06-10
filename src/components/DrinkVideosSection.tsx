@@ -1,5 +1,5 @@
 const drinkVideos = [
-  { type: "tiktok" as const, src: "https://www.tiktok.com/embed/v2/7649533247059332373", title: "Drink em Ação" },
+  { type: "vimeo" as const, src: "https://player.vimeo.com/video/1200045226?title=0&byline=0&portrait=0", title: "Drink em Ação" },
   { type: "local" as const, src: "/videos/drink-1.mp4", title: "Preparação Artesanal" },
   { type: "local" as const, src: "/videos/drink-2.mp4", title: "Drink Exclusivo" },
   { type: "local" as const, src: "/videos/drink-3.mp4", title: "Nossa Experiência" },
