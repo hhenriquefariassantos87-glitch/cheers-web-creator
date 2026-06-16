@@ -58,12 +58,6 @@ const FooterSection = () => {
                 </span>
                 <span className="text-muted-foreground group-hover:text-primary text-xs transition-colors">Instagram</span>
               </a>
-              <a href="#" className="flex flex-col items-center gap-1 group">
-                <span className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
-                  <Facebook size={20} className="text-primary" />
-                </span>
-                <span className="text-muted-foreground group-hover:text-primary text-xs transition-colors">Facebook</span>
-              </a>
             </div>
           </div>
         </div>
