@@ -2,14 +2,14 @@ import balcaoLedImg from "@/assets/balcao-led.jpg";
 import balcaoModernoImg from "@/assets/balcao-moderno.jpg";
 import balcaoClassicoImg from "@/assets/balcao-classico.jpg";
 import balcaoRusticoImg from "@/assets/balcao-rustico.jpg";
-import balcaoCapitone from "@/assets/balcao-capitone.jpg.asset.json";
+import balcaoCapitone from "@/assets/balcao-capitone.jpg";
 
 const counters = [
   { name: "Balcão Clássico", description: "Elegante e versátil", image: balcaoClassicoImg },
   { name: "Balcão de LED", description: "Design com LED integrada", image: balcaoLedImg },
   { name: "Balcão Rústico", description: "Para eventos ao ar livre", image: balcaoRusticoImg },
   { name: "Balcão Moderno", description: "Linhas contemporâneas", image: balcaoModernoImg },
-  { name: "Balcão Capitonê", description: "Sofisticado com acabamento dourado", image: balcaoCapitone.url },
+  { name: "Balcão Capitonê", description: "Sofisticado com acabamento dourado", image: balcaoCapitone },
 ];
 
 const CountersSection = () => {
