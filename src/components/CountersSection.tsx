@@ -3,6 +3,7 @@ import balcaoModernoImg from "@/assets/balcao-moderno.jpg";
 import balcaoClassicoImg from "@/assets/balcao-classico.jpg";
 import balcaoRusticoImg from "@/assets/balcao-rustico.jpg";
 import balcaoCapitone from "@/assets/balcao-capitone.jpg";
+import { useState } from "react";
 
 const counters = [
   { name: "Balcão Clássico", description: "Elegante e versátil", image: balcaoClassicoImg },
@@ -13,6 +14,8 @@ const counters = [
 ];
 
 const CountersSection = () => {
+  const [selected, setSelected] = useState<string | null>(null);
+
   return (
     <section id="balcoes" className="py-20 bg-dark-surface">
       <div className="container mx-auto px-4">
@@ -27,8 +30,8 @@ const CountersSection = () => {
           {counters.map((counter) => (
             <div key={counter.name} className="bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-colors text-center">
               {counter.image && (
-                <div className="h-64 overflow-hidden">
-                  <img src={counter.image} alt={counter.name} className="w-full h-full object-cover" />
+                <div className="h-64 overflow-hidden cursor-pointer" onClick={() => setSelected(counter.image)}>
+                  <img src={counter.image} alt={counter.name} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
                 </div>
               )}
               <div className="p-6">
@@ -43,6 +46,12 @@ const CountersSection = () => {
           <span className="text-gradient-gold font-semibold">Aviso:</span> a transferência do balcão até o local do evento possui um valor de frete à parte, calculado conforme a distância.
         </p>
       </div>
+
+      {selected && (
+        <div className="fixed inset-0 z-50 bg-background/90 flex items-center justify-center p-4 cursor-pointer" onClick={() => setSelected(null)}>
+          <img src={selected} alt="Balcão" className="max-w-full max-h-[90vh] rounded-xl object-contain" />
+        </div>
+      )}
     </section>
   );
 };
